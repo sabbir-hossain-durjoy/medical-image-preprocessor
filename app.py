@@ -232,7 +232,10 @@ st.markdown("""
     /* Mobile menu icon and hamburger menu - make it visible on all platforms */
     button[kind="header"],
     .st-emotion-cache-1rs6u1y,
-    .st-emotion-cache-r421ms {
+    .st-emotion-cache-r421ms,
+    [data-testid="baseButton-headerNoPadding"],
+    .st-emotion-cache-pkbazv,
+    .st-emotion-cache-15zrgzn {
         background: #ff4444 !important;
         border: 2px solid #cc0000 !important;
         border-radius: 8px !important;
@@ -245,11 +248,17 @@ st.markdown("""
         margin: 8px !important;
         box-shadow: 0 4px 12px rgba(204, 0, 0, 0.2) !important;
         transition: all 0.3s ease !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
     
     button[kind="header"]:hover,
     .st-emotion-cache-1rs6u1y:hover,
-    .st-emotion-cache-r421ms:hover {
+    .st-emotion-cache-r421ms:hover,
+    [data-testid="baseButton-headerNoPadding"]:hover,
+    .st-emotion-cache-pkbazv:hover,
+    .st-emotion-cache-15zrgzn:hover {
         background: #ff6666 !important;
         border-color: #ff0000 !important;
         box-shadow: 0 6px 16px rgba(204, 0, 0, 0.3) !important;
@@ -258,7 +267,10 @@ st.markdown("""
     
     button[kind="header"] svg,
     .st-emotion-cache-1rs6u1y svg,
-    .st-emotion-cache-r421ms svg {
+    .st-emotion-cache-r421ms svg,
+    [data-testid="baseButton-headerNoPadding"] svg,
+    .st-emotion-cache-pkbazv svg,
+    .st-emotion-cache-15zrgzn svg {
         fill: #4285f4 !important;
         stroke: #4285f4 !important;
         width: 24px !important;
@@ -267,7 +279,11 @@ st.markdown("""
     }
     
     /* Mobile hamburger menu specific styles */
-    [data-testid="collapsedControl"] {
+    [data-testid="collapsedControl"],
+    div.st-emotion-cache-pkbazv,
+    .st-emotion-cache-15zrgzn,
+    button.st-emotion-cache-pkbazv,
+    button[data-testid="baseButton-headerNoPadding"] {
         background: #ff4444 !important;
         color: #4285f4 !important;
         z-index: 9999999 !important;
@@ -277,20 +293,38 @@ st.markdown("""
         border-radius: 8px !important;
         box-shadow: 0 4px 12px rgba(204, 0, 0, 0.2) !important;
         transition: all 0.3s ease !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        min-width: 40px !important;
+        min-height: 40px !important;
+        opacity: 1 !important;
+        visibility: visible !important;
     }
     
-    [data-testid="collapsedControl"]:hover {
+    [data-testid="collapsedControl"]:hover,
+    div.st-emotion-cache-pkbazv:hover,
+    .st-emotion-cache-15zrgzn:hover,
+    button.st-emotion-cache-pkbazv:hover,
+    button[data-testid="baseButton-headerNoPadding"]:hover {
         background: #ff6666 !important;
         border-color: #ff0000 !important;
         box-shadow: 0 6px 16px rgba(204, 0, 0, 0.3) !important;
         transform: translateY(-1px) !important;
     }
     
-    [data-testid="collapsedControl"] svg {
+    [data-testid="collapsedControl"] svg,
+    div.st-emotion-cache-pkbazv svg,
+    .st-emotion-cache-15zrgzn svg,
+    button.st-emotion-cache-pkbazv svg,
+    button[data-testid="baseButton-headerNoPadding"] svg {
         fill: #4285f4 !important;
+        stroke: #4285f4 !important;
         width: 24px !important;
         height: 24px !important;
         filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1)) !important;
+        opacity: 1 !important;
+        visibility: visible !important;
     }
     
     /* Header toolbar needs high z-index */
