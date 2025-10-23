@@ -233,56 +233,64 @@ st.markdown("""
     button[kind="header"],
     .st-emotion-cache-1rs6u1y,
     .st-emotion-cache-r421ms {
-        background: #ffffff !important;
-        border: 1px solid #e0e6ed !important;
+        background: #ff4444 !important;
+        border: 2px solid #cc0000 !important;
         border-radius: 8px !important;
-        color: #1a1a1a !important;
+        color: #ffffff !important;
         z-index: 9999999 !important;
         position: relative !important;
         width: 40px !important;
         height: 40px !important;
         padding: 8px !important;
         margin: 8px !important;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+        box-shadow: 0 4px 12px rgba(204, 0, 0, 0.2) !important;
+        transition: all 0.3s ease !important;
     }
     
     button[kind="header"]:hover,
     .st-emotion-cache-1rs6u1y:hover,
     .st-emotion-cache-r421ms:hover {
-        background: #f7fafc !important;
-        border-color: #667eea !important;
+        background: #ff6666 !important;
+        border-color: #ff0000 !important;
+        box-shadow: 0 6px 16px rgba(204, 0, 0, 0.3) !important;
+        transform: translateY(-1px) !important;
     }
     
     button[kind="header"] svg,
     .st-emotion-cache-1rs6u1y svg,
     .st-emotion-cache-r421ms svg {
-        fill: #1a1a1a !important;
-        stroke: #1a1a1a !important;
-        width: 20px !important;
-        height: 20px !important;
+        fill: #4285f4 !important;
+        stroke: #4285f4 !important;
+        width: 24px !important;
+        height: 24px !important;
+        filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1)) !important;
     }
     
     /* Mobile hamburger menu specific styles */
     [data-testid="collapsedControl"] {
-        background: #ffffff !important;
-        color: #1a1a1a !important;
+        background: #ff4444 !important;
+        color: #4285f4 !important;
         z-index: 9999999 !important;
         position: relative !important;
         padding: 8px !important;
-        border: 1px solid #e0e6ed !important;
+        border: 2px solid #cc0000 !important;
         border-radius: 8px !important;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+        box-shadow: 0 4px 12px rgba(204, 0, 0, 0.2) !important;
+        transition: all 0.3s ease !important;
     }
     
     [data-testid="collapsedControl"]:hover {
-        background: #f7fafc !important;
-        border-color: #667eea !important;
+        background: #ff6666 !important;
+        border-color: #ff0000 !important;
+        box-shadow: 0 6px 16px rgba(204, 0, 0, 0.3) !important;
+        transform: translateY(-1px) !important;
     }
     
     [data-testid="collapsedControl"] svg {
-        fill: #1a1a1a !important;
-        width: 20px !important;
-        height: 20px !important;
+        fill: #4285f4 !important;
+        width: 24px !important;
+        height: 24px !important;
+        filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1)) !important;
     }
     
     /* Header toolbar needs high z-index */
