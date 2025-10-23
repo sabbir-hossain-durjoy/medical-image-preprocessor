@@ -229,38 +229,93 @@ st.markdown("""
         background: #ffffff;
     }
     
-    /* Mobile menu icon - make it black/visible */
-    button[kind="header"] {
+    /* Mobile menu icon and hamburger menu - make it visible on all platforms */
+    button[kind="header"],
+    .st-emotion-cache-1rs6u1y,
+    .st-emotion-cache-r421ms {
+        background: #ffffff !important;
+        border: 1px solid #e0e6ed !important;
+        border-radius: 8px !important;
         color: #1a1a1a !important;
         z-index: 9999999 !important;
         position: relative !important;
+        width: 40px !important;
+        height: 40px !important;
+        padding: 8px !important;
+        margin: 8px !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
     }
     
-    button[kind="header"] svg {
+    button[kind="header"]:hover,
+    .st-emotion-cache-1rs6u1y:hover,
+    .st-emotion-cache-r421ms:hover {
+        background: #f7fafc !important;
+        border-color: #667eea !important;
+    }
+    
+    button[kind="header"] svg,
+    .st-emotion-cache-1rs6u1y svg,
+    .st-emotion-cache-r421ms svg {
         fill: #1a1a1a !important;
         stroke: #1a1a1a !important;
+        width: 20px !important;
+        height: 20px !important;
     }
     
-    /* Mobile hamburger menu */
+    /* Mobile hamburger menu specific styles */
     [data-testid="collapsedControl"] {
+        background: #ffffff !important;
         color: #1a1a1a !important;
         z-index: 9999999 !important;
         position: relative !important;
+        padding: 8px !important;
+        border: 1px solid #e0e6ed !important;
+        border-radius: 8px !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+    }
+    
+    [data-testid="collapsedControl"]:hover {
+        background: #f7fafc !important;
+        border-color: #667eea !important;
     }
     
     [data-testid="collapsedControl"] svg {
         fill: #1a1a1a !important;
+        width: 20px !important;
+        height: 20px !important;
     }
     
     /* Header toolbar needs high z-index */
     [data-testid="stHeader"] {
         z-index: 9999999 !important;
         position: relative !important;
+        background: #ffffff !important;
     }
     
     [data-testid="stToolbar"] {
         z-index: 9999999 !important;
         position: relative !important;
+        background: #ffffff !important;
+    }
+    
+    /* Additional menu button visibility fixes for Streamlit cloud */
+    .stDeployButton,
+    .stToolbar button,
+    [data-testid="baseButton-headerNoPadding"] {
+        background: #ffffff !important;
+        border: 1px solid #e0e6ed !important;
+        border-radius: 8px !important;
+        color: #1a1a1a !important;
+        padding: 8px !important;
+        margin: 4px !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+    }
+    
+    .stDeployButton:hover,
+    .stToolbar button:hover,
+    [data-testid="baseButton-headerNoPadding"]:hover {
+        background: #f7fafc !important;
+        border-color: #667eea !important;
     }
     
     /* MOBILE RESPONSIVE STYLES */
